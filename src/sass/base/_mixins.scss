@@ -1,0 +1,36 @@
+@mixin reset-list{
+    li{
+        display: inline-block;
+        margin-left: $marginLeft;
+
+        a{
+            text-decoration: none;
+            color: $lightWhite;
+
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+}
+
+@mixin normal-list{
+    li{
+        display: block;
+        margin: 0;
+    }
+}
+
+@mixin margins($margin, $padding: 0){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin kvadrat($velicina, $krug: false) {
+    width: $velicina;
+    height: $velicina;
+
+    @if $krug {
+        border-radius: 50%;
+    }
+}
