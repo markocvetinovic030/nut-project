@@ -1,0 +1,30 @@
+@import 'base/reset';
+@import 'base/vars';
+@import 'base/mixins';
+
+
+.section-one{
+    .background{
+        background-image: url(/src/img/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+        padding-top: 280px;
+
+        .container{
+            h1{
+                font-size: 60px;
+                line-height: 60px;
+                color: white;
+                font-weight: bold;
+            }
+            #line{
+                width: 167px;
+                height: 6px;
+                background-color: $green;
+                display: block;
+                margin-top: 100px;
+            }
+        }
+    }
+}
