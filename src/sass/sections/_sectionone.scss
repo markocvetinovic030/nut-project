@@ -27,4 +27,33 @@
             }
         }
     }
+
+    .flex-box{
+        @include flex-box;
+        .contents{
+            width: 25%;
+            text-align: center;
+            color: white;
+            padding: 40px 50px ;
+            img{
+                margin-bottom: 10px;
+            }
+            .title{
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+            &.one{
+                background-color: $green;
+            }
+            &.two{
+                background-color: $red;
+            }
+            &.three{
+                background-color: $light-blue;
+            }
+            &.four{
+                background-color: $orange;
+            }
+        }
+    }
 }
