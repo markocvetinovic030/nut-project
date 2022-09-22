@@ -2,12 +2,42 @@
 @import 'base/vars';
 @import 'base/mixins';
 
-.section-two{
-    margin-top:200px;
+.section-two {
+    margin-top: 200px;
 
- .container{
-    .flex-box{
-        @include flex-box;
+    .container {
+        .flex-box {
+            @include flex-box;
+            gap: 120px;
+                .left-content{
+                    img{
+                        max-width:343px;
+                        max-height: 343px;
+                    }
+                }
+
+            .right-content {
+                h2 {
+                    font-family: arial;
+                    font-size: 48px;
+                    line-height: 55px;
+                    font-weight: 600;
+                    color: #333333;
+                }
+
+                p {
+                    font-family: monospace;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    color: #0000008F;
+                    margin-top:25px;
+
+                }
+
+
+            }
+        }
     }
- }   
+
 }
