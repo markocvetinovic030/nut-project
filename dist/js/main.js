@@ -1,0 +1,1 @@
+let a=230;console.log(a);let b=46;console.log(b);
