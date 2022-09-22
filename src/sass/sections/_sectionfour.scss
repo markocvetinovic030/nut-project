@@ -1,0 +1,101 @@
+@import 'base/reset';
+@import 'base/vars';
+@import 'base/mixins';
+
+
+.section-four {
+    background-color: $light-gray;
+    padding: 100px 0px;
+    .container {
+        .flex-box {
+            @include flex-box;
+
+            .left-content {
+                width: 40%;
+
+                img {
+                    width: 400px;
+                    border-radius: 10px;
+                }
+
+                h4 {
+                    font-size: 48px;
+                    line-height: 55px;
+                    font-weight: bold;
+                    color: $dark-blue;
+                    font-family: $font-1;
+                    margin-bottom: 25px;
+                }
+
+                #date {
+                    color: $light-blue;
+                    font-size: 1.5em;
+                    font-weight: $font-1;
+                    margin-bottom: 25px;
+                }
+
+                #first-p {
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                    font-family: $font-1;
+                    font-size: 16px;
+                }
+
+                #second-p {
+                    font-family: $font-1;
+                    font-size: 16px;
+                }
+
+            }
+
+            .right-content {
+                width: 60%;
+
+                #carouselExampleControls {
+                    .arrow{
+                       #prev-arrow{
+                        width: 40px;
+                        transform: rotate(180deg);
+                       }
+                       #next-arrow{
+                        width: 40px;
+                       }
+                    }
+                    .carousel-inner {
+                        width: 70%;
+                        margin: 0 auto;
+                        text-align: center;
+                        padding: 20px 0px 50px 20px;
+                        .grid-box {
+                            display: grid;
+                            grid-template-columns: 80px 80px 80px 80px 80px ;
+                            gap: 10px;
+                            .dates {
+                                width: 80px;
+                                height: 80px;
+                                background-color: $light-gray-2;
+                            }
+                        }
+
+                        .month {
+                            color: $light-blue;
+                            font-size: 2em;
+                            font-weight: bold;
+                            font-family: $font-1;
+                            padding-top: 10px;
+                            margin-bottom: 50px;
+                        }
+                    }
+
+                    .carousel-control-prev {
+
+                    }
+
+                    .carousel-control-next {
+   
+                    }
+                }
+            }
+        }
+    }
+}
