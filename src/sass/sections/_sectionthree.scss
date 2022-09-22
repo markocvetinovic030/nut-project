@@ -1,0 +1,89 @@
+@import 'base/reset';
+@import 'base/vars';
+@import 'base/mixins';
+
+
+.section-three {
+    margin-top: 200px;
+
+    .line-center {
+        height: 5px;
+        max-width: 54px;
+        background-color: #44ACB4;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-family: arial;
+        font-size: 48px;
+        line-height: 55px;
+        font-weight: 600;
+        margin-top: 35px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .container {
+        @include flex-box;
+        margin-top: 80px;
+
+        .left-content {
+            @include flex-box;
+
+            img {
+                max-width: 230px;
+                height: 260px;
+            }
+
+            .content-div {
+                margin-left: 40px;
+
+                p {
+                    font-family: monospace;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                h4 {
+                    font-family: arial;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: #041742;
+
+                }
+            }
+        }
+
+        .right-content {
+            @include flex-box;
+
+            img {
+                max-width: 230px;
+                height: 260px;
+            }
+
+            .content-div {
+                margin-left: 40px;
+
+                p {
+                    font-family: monospace;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                h4 {
+                    font-family: arial;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: #041742;
+
+                }
+            }
+        }
+    }
+
+}
