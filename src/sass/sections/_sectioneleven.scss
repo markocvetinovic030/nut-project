@@ -1,0 +1,38 @@
+@import 'base/reset';
+@import 'base/vars';
+@import 'base/mixins';
+
+.section-eleven{
+    padding-top:50px;
+    padding-bottom:50px;
+    .container{
+        .left-notch{
+            height:5px;
+            width:50px;
+            background-color:#44ACB4;
+            margin-bottom:25px;
+            
+        }
+        h11{
+            font-family:'Montserrat';
+            font-size:48px;
+            line-height:55px;
+            font-weight:800;
+            color:#041642;
+            
+        }
+        p{
+            font-family:'Open Sans';
+            font-size:14px;
+            line-height:28px;
+            font-weight:400;
+            color:#000000DB;
+            margin-top:35px;
+        }
+        .img-wrapper{
+            @include flex-box;
+            margin-top:20px;
+            
+        }
+    }
+}
